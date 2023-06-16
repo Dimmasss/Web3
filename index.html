@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The task </title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<article>
+    <section class="left">
+        <div class="add">
+            <input type="text" id="inputAddProduct" placeholder="Назва товару">
+            <button id="addButton" data-tooltip="Додати продукт"> Додати</button>
+        </div>
+        <div id="left-list">
+            <hr>
+            <div class="list-element">
+                <p contenteditable="true"><s> Помідори </s></p>
+                <div class="amount-buttons">
+<!--                            <button class="minusbutton" data-tooltip="+1 до кількості">-</button>-->
+                    <span> 2 </span>
+                    <!--        <button class="plusbutton" data-tooltip="-1 до кількості">+</button>-->
+                </div>
+                <div class="buybuttons">
+                    <button class="buybutton" data-tooltip="Купити"> Не куплено</button>
+                    <!--            <button class="xbutton" data-tooltip="Видалити"> X </button>-->
+                </div>
+            </div>
+            <hr>
+            <div class="list-element">
+                <p contenteditable="true"> Печиво </p>
+                <div class="amount-buttons">
+                    <button class="minusbutton" data-tooltip="-1 до кількості">-</button>
+                    <span> 2 </span>
+                    <button class="plusbutton" data-tooltip="+1 до кількості">+</button>
+                </div>
+                <div class="buybuttons">
+                    <button class="buybutton" data-tooltip="Не купувати"> Куплено</button>
+                    <button class="xbutton" data-tooltip="Видалити"> X</button>
+                </div>
+            </div>
+            <hr>
+            <div class="list-element">
+                <p contenteditable="true"> Сир </p>
+                <div class="amount-buttons">
+                    <button class="minusbutton disabled" data-tooltip="-1 до кількості">-</button>
+                    <span> 1 </span>
+                    <button class="plusbutton" data-tooltip="+1 до кількості">+</button>
+                </div>
+                <div class="buybuttons">
+                    <button class="buybutton" data-tooltip="Не купувати"> Куплено</button>
+                    <button class="xbutton" data-tooltip="Видалити"> X</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="right">
+        <h2> Залишилося </h2>
+        <hr>
+        <div class="products products_left" id="pleft">
+            <div class="product">
+                <span class="pname"> Печиво </span>
+                <span class="pamount"> 2 </span>
+            </div>
+            <div class="product">
+                <span class="pname"> Сир </span>
+                <span class="pamount"> 1 </span>
+            </div>
+        </div>
+        <hr>
+        <h2> Куплено </h2>
+        <hr>
+        <div class="products products_bought" id="pbought">
+            <div class="product">
+                <span class="pname"> Помідори </span>
+                <span class="pamount"> 2 </span>
+            </div>
+        </div>
+    </section>
+</article>
+<section class="badge">
+    <h2> Buy List </h2>
+    <h4> Created by: </h4>
+    <h3> Dmytro Sukailo </h3>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
